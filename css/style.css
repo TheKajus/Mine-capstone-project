@@ -1,0 +1,106 @@
+
+:root{
+    --top-container: #0C2C55;
+    --middle-container: #296374;
+    --contant: #629FAD;
+    --footer: #0099FF;
+    --white: #fff;
+    --black: #000;
+}
+body{
+    margin: 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+.top-container{
+    color: var(--white);
+    user-select: none;
+    .content{
+        background-color: var(--top-container);
+        padding: 100px 0;
+    }
+    h1,h2{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    h1{
+    font-family: "Bad Script", cursive;
+    font-size: 5rem;
+    }
+    h2{
+    font-size: 2.5rem;
+    font-weight: normal;
+    }
+    .pro{
+        text-decoration: underline wavy;
+        text-decoration-thickness: 2px; 
+    }
+}
+.middle-container{
+    margin: 100px 0 0 0;
+    .kajus-image{
+        border-radius: 50%;
+    }
+    h2{
+        background: #629FAD;
+        background: linear-gradient(180deg, var(--contant) 0%, var(--middle-container) 50%, var(--top-container) 100%);
+        background-clip: text;
+        color: transparent;
+    }
+    .paragraph-top{
+        width: 20%;
+        margin: auto;
+    }
+    .parent{
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        grid-template-rows: repeat(1, 1fr);
+        width: 50%;
+        margin: 0 auto 0 auto;
+        text-align: left;
+    }
+    h3{
+        color: var(--top-container);
+    }
+    .contact-message{
+        margin: 15px auto 35px auto;
+    }
+    .btn{
+        padding: 10px 30px;
+        text-decoration: none;
+        color: var(--white);
+        background-color: var(--contant);
+        border-radius: 20px;
+    } 
+    .btn:hover{
+        background: var(--top-container);
+        background: linear-gradient(180deg, var(--contant) 0%, var(--top-container) 100%);
+    }
+}
+.bottom-container{
+    a{
+        text-decoration: none;
+        padding: 0 50px;
+        color: var(--black);
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    p{
+        font-size: .75rem;
+        padding: 25px 0;
+        margin-bottom: 0;
+    }
+    .wave-bottom{
+        margin-bottom: -4px;
+    }
+    .footer{
+        background-color: var(--footer);
+    }
+}
+hr{
+    width: 1%;
+    border: dotted var(--contant) 10px;
+    border-bottom: none;
+    margin: 48px auto;
+}
